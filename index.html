@@ -9,20 +9,29 @@
   </head>
   <body>
     <div class="mainContainer">
+      <div class="title">Make some music!</div>
       <div class="homeKeys">
-        <div class="key" id="a">A</div>
-        <div class="key" id="s">S</div>
-        <div class="key" id="d">D</div>
-        <div class="key" id="f">F</div>
-        <div class="key" id="g">G</div>
-        <div class="key" id="h">H</div>
-        <div class="key" id="j">J</div>
-        <div class="key" id="k">K</div>
-        <div class="key" id="l">L</div>
+        <div class="key" data-key="65">A<br><span class="desc">boom</span></div>
+        <div class="key" data-key="83">S<br><span class="desc">clap</span></div>
+        <div class="key" data-key="68">D<br><span class="desc">hihat</span></div>
+        <div class="key" data-key="70">F<br><span class="desc">kick</span></div>
+        <div class="key" data-key="71">G<br><span class="desc">openhat</span></div>
+        <div class="key" data-key="72">H<br><span class="desc">ride</span></div>
+        <div class="key" data-key="74">J<br><span class="desc">snare</span></div>
+        <div class="key" data-key="75">K<br><span class="desc">tink</span></div>
+        <div class="key" data-key="76">L<br><span class="desc">tom</span></div>
       </div>
     </div>
     <audio>
-      <source src="guitarSounds/1st_String_E_64kb.mp3" type="audio/mp3" id='eStringSource'>
+      <audio data-key="65" src="sounds/boom.wav"></audio>
+      <audio data-key="83" src="sounds/clap.wav"></audio>
+      <audio data-key="68" src="sounds/hihat.wav"></audio>
+      <audio data-key="70" src="sounds/kick.wav"></audio>
+      <audio data-key="71" src="sounds/openhat.wav"></audio>
+      <audio data-key="72" src="sounds/ride.wav"></audio>
+      <audio data-key="74" src="sounds/snare.wav"></audio>
+      <audio data-key="75" src="sounds/tink.wav"></audio>
+      <audio data-key="76" src="sounds/tom.wav"></audio>
     </audio>
     <script type="text/javascript" src="script.js"></script>
   </body>
